@@ -1,0 +1,57 @@
+nav a {
+    padding-inline: 50px;
+    font-size: 35px;
+    text-decoration: Solid;
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    padding-top: 10px;
+    text-align: center;
+}
+/*views*/
+#views{
+    display: none;
+}
+/*home view css*/
+#homeView h1{
+    padding-top: 70px;
+    font-size: 45px;
+    text-align: center;
+    
+}
+#homeView h1 span{
+    font-size: 65px;
+    color: orange;
+    
+}
+#homeView p{
+    text-align: center;
+    color: black; 
+}
+/*catalogView*/
+#catalogView h1{
+    text-align: center;
+    color: orange;
+}
+#catalogView ul{
+    background-color: papayawhip;
+}
+#catalogView ul li{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+#catalogView ul li p{
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal; 
+    text-decoration: underline orange;  
+    padding-bottom: 20px;
+}
+/* aboutView */
+#aboutView div{
+    display: inline-block;
+    background-color: bisque;
+}
