@@ -11,9 +11,9 @@ nav {
     text-align: center;
 }
 /*views*/
-#views{
+/* #views{
     display: none;
-}
+} */
 /*home view css*/
 #homeView h1{
     padding-top: 70px;
@@ -59,4 +59,9 @@ nav {
 #loginView label{
     display: block;
     padding-bottom: 10px;
+}
+/*registration view*/
+#registerView form label{
+display: block;
+padding-bottom: 10px;
 }

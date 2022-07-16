@@ -12,4 +12,22 @@ export function userHandler(user){
         logout.style.display = 'inline-block';
         document.querySelector('main').replaceChildren(section);
     }
+    if(user == 'logout'){
+        home.style.display = 'inline-block';
+        catalog.style.display = 'inline-block';
+        login.style.display = 'inline-block';
+        register.style.display = 'inline-block';
+        about.style.display = 'inline-block';
+        logout.style.display = 'none';
+        document.querySelector('main').replaceChildren(section);
+    }
+}
+export function greetings(){
+    const greetingsSpan = document.getElementById('greetings');
+    const email = sessionStorage.getItem('email');
+    if(!email){
+        greetingsSpan.textContent = '';
+    }else{
+        greetingsSpan.textContent = `Hello, ${email}!`
+    }
 }

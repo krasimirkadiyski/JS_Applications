@@ -1,4 +1,4 @@
-import { userHandler } from "./util.js";
+import { greetings, userHandler } from "./util.js";
 
 const section = document.getElementById('loginView');
 const form = document.querySelector('form');
@@ -41,6 +41,9 @@ async function onSubmit(ev) {
         const data = await response.json();
         console.log(data);
         sessionStorage.setItem('accessToken', data.accessToken);
+        sessionStorage.setItem('email', email);
+        greetings();
+
 
         userHandler('login');
 
