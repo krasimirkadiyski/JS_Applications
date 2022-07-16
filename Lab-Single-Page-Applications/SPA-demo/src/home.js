@@ -1,4 +1,4 @@
-const section = document.getElementById('homeView');
+export const section = document.getElementById('homeView');
 section.remove();
 export function showHome(){
     document.querySelector('main').replaceChildren(section);

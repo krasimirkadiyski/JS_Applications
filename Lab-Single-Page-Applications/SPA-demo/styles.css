@@ -55,3 +55,8 @@ nav {
     display: inline-block;
     background-color: bisque;
 }
+/* loginView */
+#loginView label{
+    display: block;
+    padding-bottom: 10px;
+}
