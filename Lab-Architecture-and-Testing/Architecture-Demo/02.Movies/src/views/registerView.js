@@ -8,7 +8,7 @@ section.remove();
 let ctx = null;
 export function registerView (inCtx){
     ctx = inCtx;
-    ctx.render(section);
+    ctx.render([section]);
 };
 async function onSubmit({email,password, repeatPassword}){
     if(!email || !password){

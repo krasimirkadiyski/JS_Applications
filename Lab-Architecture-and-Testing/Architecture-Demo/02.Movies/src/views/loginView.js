@@ -10,7 +10,7 @@ section.remove();
 let ctx = null;
 export function loginView (inCtx){
     ctx = inCtx;
-    ctx.render(section);
+    ctx.render([section]);
 };
 
 

@@ -9,20 +9,24 @@ import { registerView } from "./views/registerView.js";
 export const baseHtml = document.getElementById('container').innerHTML;
 
 
-document.querySelector('nav').addEventListener('click', onNavigate);
+document.getElementById('container').addEventListener('click', onNavigate);
 const [greetings, logout, login, register] = document.querySelector('nav ul').children;
-console.log(greetings);
+
 
 const sections = {
     'home': homeView,
     'example': exampleView,
-    'add': addView,
+    'add movie': addView,
     'login': loginView,
     'register': registerView,
     'edit': editView,
     'logout': onLogout,
+    'movies': homeView,
 };
-goTo('home')
+
+goTo('home');
+checkUserNav();
+
 
 function onNavigate(event) {
 

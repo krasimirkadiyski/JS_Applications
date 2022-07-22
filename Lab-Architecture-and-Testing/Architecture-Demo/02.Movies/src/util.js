@@ -4,7 +4,6 @@ export function formHandler(form, callback) {
     function onSubmit(event) {
         event.preventDefault();
         const formData = new FormData(form);
-        console.log([...formData.entries()]);
         callback(Object.fromEntries([...formData.entries()]));
     }
 }

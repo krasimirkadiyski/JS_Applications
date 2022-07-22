@@ -16,6 +16,10 @@ async function request(method, url, data) {
     try {
         const res = await fetch(`${host}${url}`, options);
         if (!res.ok) {
+            if (res.status == 401) {
+                alert('Should be logged in!');
+                return;
+            }
             const error = await res.json();
             throw new Error(error.message);
         }
