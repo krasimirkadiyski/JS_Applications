@@ -7,5 +7,7 @@ export function render(sections){
     if (currents !== null) {
         currents.forEach(c => c.remove());
     }
+    sections.forEach(s => console.log(s.children));
     sections.forEach(s => container.insertBefore(s,footer));
+    
 }
