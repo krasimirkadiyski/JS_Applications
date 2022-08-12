@@ -32,3 +32,4 @@ export function logout() {
     get('/users/logout');
     clearUserData();
 };
+

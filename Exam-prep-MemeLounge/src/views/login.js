@@ -32,7 +32,7 @@ export function loginView(ctx) {
 
 
     if (email == '' || password == '') {
-        return alert('All fields are required!')
+        return notify('All fields are required!')
     }
     await login(email,password);
     ctx.updateNav();
