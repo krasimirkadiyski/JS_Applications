@@ -36,6 +36,7 @@ export async function editView(ctx){
         };
 
         if (meme.title == '' || meme.description == '' || meme.imageUrl == '') {
+            //return
            notify('All fields are required!')
         }
         await editMeme(ctx.params.id, meme);
